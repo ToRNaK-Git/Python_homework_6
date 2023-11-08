@@ -1,4 +1,8 @@
 arr = []
-if len(arr) >= 1:
-    arr[0], arr[-1] = arr[-1], arr[0]
-print(arr)
+if len(arr) > 0:
+    a = [arr[-1]]
+    new_arr1 = arr.pop(-1)
+    new_arr2 = a + arr
+else:
+    new_arr2 = []
+print(new_arr2)
